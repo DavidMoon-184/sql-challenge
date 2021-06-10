@@ -11,7 +11,7 @@ DROP TABLE IF EXISTS titles;
 CREATE TABLE departments (
 	dept_no VARCHAR NOT NULL,
 	dept_name VARCHAR NOT NULL,
-	PRIMARY KEY (dept_no),
+	PRIMARY KEY (dept_no)
 );
 CREATE TABLE dept_emp (
 	emp_no INT NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE employees (
 	last_name VARCHAR NOT NULL,
 	gender VARCHAR NOT NULL,
 	hire_date DATE NOT NULL,
-	PRIMARY KEY (emp_no)
+	PRIMARY KEY (emp_no),
     FOREIGN KEY (emp_title_id) REFERENCES titles (title_id)
 );
 CREATE TABLE managers (
