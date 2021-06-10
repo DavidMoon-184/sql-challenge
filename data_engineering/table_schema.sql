@@ -37,7 +37,7 @@ CREATE TABLE dept_emp (
 	PRIMARY KEY (emp_no, dept_no)
 );
 
-CREATE TABLE managers (
+CREATE TABLE dept_manager (
 	dept_no VARCHAR NOT NULL,
 	emp_no INT NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
@@ -56,6 +56,6 @@ CREATE TABLE salaries (
 SELECT * FROM departments;
 SELECT * FROM dept_emp;
 SELECT * FROM employees;
-SELECT * FROM managers;
+SELECT * FROM dept_manager;
 SELECT * FROM salaries;
 SELECT * FROM titles;
